@@ -10,7 +10,7 @@ int MinDiatance(int *ptr, int size,int a,int b){
                 if(MinDist>((temp-iter)-1))
                 MinDist=temp-iter-1;
                else
-                 if(MinDist>((temp-iter)-1))
+                 if(MinDist<((temp-iter)-1))
                  MinDist=iter-temp-1;
     
         if(MinDist==INT_MAX)
@@ -23,6 +23,6 @@ int MinDiatance(int *ptr, int size,int a,int b){
 int main ()
 {
 int a[6]={1,2,3,7,5,7};
-printf(" destance between then is %d",MinDiatance(a,6,1,7));
+printf(" destance between them is %d",MinDiatance(a,6,1,7));
   return 0;
 }

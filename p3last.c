@@ -13,7 +13,6 @@ int main()
 	int search;
 	scanf("%d",&search);
 	LinearSearch(a,5,search)?printf("\npresent at %d posi",LinearSearch(a,5,search)):printf("\nnot present");
-	scanf("%d ",&search);
-	scanf("%d",&search);
+	
 	return 0;
 }

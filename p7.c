@@ -1,13 +1,14 @@
 #include <stdio.h>
+
+
 int NonZero(int *ptr,int n)
 {   int count=0;
     for(int i=0;i<n;i++)
     for(int j=0;j<n;j++)
         if((*ptr++)!=0)
          count++;
-return count;    
-}
-
+    return count;    
+    }
 int SumAbove(int *ptr,int n)
 {   int sum=0;
     for(int i=0;i<n-1;i++)
@@ -31,9 +32,6 @@ int DigonalProduct(int *ptr,int n)
              return product;
     
 }
-
-
-
 int main ()
 {
 int a[3][3]={1,2,3,4,5,6,7,8,9};
